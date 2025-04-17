@@ -124,11 +124,6 @@
 <body>
   <div id="phone">
     <div id="lock-screen">
-    <button onclick="document.getElementById('bg-music').play()" 
-            style="margin-top: 20px; padding: 15px 25px; font-size: 1.2em; border-radius: 10px; background: #28a745; color: white; border: none; cursor: pointer;">
-        🎵 Lancer la musique
-    </button>
-
       <h2>Supprime vite les photos avant qu'elles ne soient trop tard...</h2>
       <p>Entrez le mot de passe :</p>
       <input type="password" id="code" readonly>
@@ -148,11 +143,7 @@
 
     <div id="home-screen">
       <div class="app-icon" onclick="openGallery()">Galerie</div>
-    
-    <div style="margin-top: 10px;">
-      <button onclick="document.getElementById('bg-music').play()">Lancer la musique</button>
     </div>
-    
 
     <div id="gallery-app">
       <div class="gallery" id="gallery"></div>
@@ -162,7 +153,7 @@
   <audio id="audio-success" src="success.mp3"></audio>
   <audio id="audio-error" src="error.mp3"></audio>
   <audio id="victory-sound" src="victory meme (sound effect).mp3"></audio>
-  <audio id="bg-music" loop>
+  <audio autoplay loop>
     <source src="Cinematic Tension NoCopyright Background Music for Video  Tensions Run High by soundridemusic.mp3" type="audio/mp3">
   </audio>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
